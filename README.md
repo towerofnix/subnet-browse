@@ -8,7 +8,7 @@ A simple experiment that lets you explore the locations of the
 It's designed for discovering and exploring patterns - you can make good use of
 the filter button!
 
-Try it out online [here](online).
+Try it out online [here][online].
 
 ## Credits
 
