@@ -154,14 +154,20 @@ function buildLocationTiles(locations) {
   for (let location of locations) {
     const tile = document.createElement('div')
     tile.dataset.coordinate = location.coord
-    tile.addEventListener('click', () => {
-      focusLocation(location)
-    })
     tile.classList.add('location-tile')
+
+    const a = document.createElement('a')
+    a.href = '#'
+    tile.appendChild(a)
 
     const img = document.createElement('img')
     img.src = getTileImagePath(location)
-    tile.appendChild(img)
+    a.appendChild(img)
+
+    a.addEventListener('click', evt => {
+      focusLocation(location)
+      evt.preventDefault()
+    })
 
     locationList.appendChild(tile)
   }
@@ -212,5 +218,6 @@ function setupFilterBar() {
     applyFilters()
   })
 }
+
 setupFilterBar()
 buildLocationTiles(window.subnetLocations)
