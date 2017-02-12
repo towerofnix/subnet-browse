@@ -23,6 +23,7 @@ const filterTypes = [
       {type: 'dropdown', option: 'property', choices: [
         ['coord', 'Coordinate'],
         ['encryptedCoord', 'Encrypted Coordinate'],
+        ['intelligenceLayer', 'Intelligence Level'],
         ['version', 'Version']
       ]},
       {type: 'dropdown', option: 'condition', choices: [
