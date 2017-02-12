@@ -10,5 +10,14 @@ the filter button!
 
 Try it out online [here](online).
 
+## Credits
+
+All screenshots of locations were taken from the [Submachine Wiki][wiki]
+
+The actual Submachine Universe, as well as the pictures, were created by
+[Mateusz Skutnik][mateusz]
+
   [online]: https://liam4.github.io/subnet-thing/
   [subnet]: http://submachine.wikia.com/wiki/Submachine_Universe
+  [wiki]: http://submachine.wikia.com
+  [mateusz]: http://mateuszskutnik.com
