@@ -6,14 +6,40 @@
     <link rel='stylesheet' href='main.css'>
   </head>
   <body>
-    <div id='filter-order-controls'>
-      <div class='control-row header'>
-        <button id='add-filter-button'>Add Filter</button>
-        <button id='apply-filters-button'>Apply Filters</button>
+    <div id='main'>
+      <div id='filter-order-controls'>
+        <div class='control-row header'>
+          <button id='add-filter-button'>Add Filter</button>
+          <button id='apply-filters-button'>Apply Filters</button>
+        </div>
+        <div id='filter-list'></div>
       </div>
-      <div id='filter-list'></div>
+      <div id='main-content'>
+        <div id='location-list'></div>
+        <div id='details'>
+          <img id='details-image'>
+          <h1 id='details-title'></h1>
+          <table>
+            <tr>
+              <th>Coordinate</th>
+              <td id='details-coord'></td>
+            </tr>
+            <tr>
+              <th>Encrypted Coord.</th>
+              <td id='details-encrypted-coord'></td>
+            </tr>
+            <tr>
+              <th>Intelligence Level</th>
+              <td id='details-intelligence-level'></td>
+            </tr>
+            <tr>
+              <th>Subnet Update</th>
+              <td id='details-version'></td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
-    <div id='location-list'></div>
     <script src='locations.js'></script>
     <script src='main.js'></script>
   </body>

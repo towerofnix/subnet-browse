@@ -136,6 +136,60 @@ function applyFilters() {
   buildLocationTiles(array)
 }
 
+function buildLocationTiles(locations) {
+  const locationList = document.getElementById('location-list')
+
+  clearChildren(locationList)
+
+  for (let location of locations) {
+    const tile = document.createElement('div')
+    tile.dataset.coordinate = location.coord
+    tile.addEventListener('click', () => {
+      focusLocation(location)
+    })
+    tile.classList.add('location-tile')
+
+    const img = document.createElement('img')
+    img.src = getTileImagePath(location)
+    tile.appendChild(img)
+
+    locationList.appendChild(tile)
+  }
+}
+
+function focusLocation(location) {
+  const setCellText = (id, text) => {
+    const el = document.getElementById('details-' + id)
+    clearChildren(el)
+    el.appendChild(document.createTextNode(text))
+  }
+
+  document.getElementById('details-image').src = getTileImagePath(location)
+
+  const title = document.getElementById('details-title')
+  clearChildren(title)
+  title.appendChild(document.createTextNode(location.coord + ' '))
+
+  const wikiLink = document.createElement('a')
+  wikiLink.target = '_blank'
+  wikiLink.appendChild(document.createTextNode('(Wiki)'))
+  wikiLink.href = getWikiLink(location)
+  title.appendChild(wikiLink)
+
+  setCellText('coord', location.coord)
+  setCellText('encrypted-coord', location.encryptedCoord)
+  setCellText('intelligence-level', location.intelligenceLayer)
+  setCellText('version', location.version)
+}
+
+function getWikiLink(location) {
+  return `http://submachine.wikia.com/wiki/${location.coord}`
+}
+
+function getTileImagePath(location) {
+  return `img/tiles/${location.coord}.png`
+}
+
 function setupFilterBar() {
   const addFilterBtn = document.getElementById('add-filter-button')
   const applyFiltersBtn = document.getElementById('apply-filters-button')
@@ -148,28 +202,5 @@ function setupFilterBar() {
     applyFilters()
   })
 }
-
-function getTileImagePath(location) {
-  return `img/tiles/${location.coord}.png`
-}
-
-function buildLocationTiles(locations) {
-  const locationList = document.getElementById('location-list')
-
-  clearChildren(locationList)
-
-  for (let location of locations) {
-    const tile = document.createElement('div')
-    tile.dataset.coordinate = location.coord
-    tile.classList.add('location-tile')
-
-    const img = document.createElement('img')
-    img.src = getTileImagePath(location)
-    tile.appendChild(img)
-
-    locationList.appendChild(tile)
-  }
-}
-
 setupFilterBar()
 buildLocationTiles(window.subnetLocations)
