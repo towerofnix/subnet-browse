@@ -16,6 +16,10 @@ const filterTypes = [
         return x[opts.property].startsWith(opts.value)
       } else if (opts.condition === 'ends-with') {
         return x[opts.property].endsWith(opts.value)
+      } else if (opts.condition === 'greater') {
+        return x[opts.property] > opts.value
+      } else if (opts.condition === 'less') {
+        return x[opts.property] < opts.value
       }
     }),
 
@@ -29,7 +33,9 @@ const filterTypes = [
       {type: 'dropdown', option: 'condition', choices: [
         ['equal', 'is equal to'],
         ['starts-with', 'starts with'],
-        ['ends-with', 'ends with']
+        ['ends-with', 'ends with'],
+        ['greater', 'is greater than'],
+        ['less', 'is less than']
       ]},
       {type: 'input', option: 'value'}
     ]
