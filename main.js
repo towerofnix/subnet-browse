@@ -63,6 +63,9 @@ function buildFilterList() {
             } else {
               option.appendChild(document.createTextNode(optionLabel))
             }
+            if (filter.optionValues[part.option] === option.value) {
+              option.selected = true
+            }
             select.appendChild(option)
           }
           Object.defineProperty(filter.optionValues, part.option, {
