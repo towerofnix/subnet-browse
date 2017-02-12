@@ -90,6 +90,18 @@ function buildFilterList() {
       }
     }
 
+    const rowControls = document.createElement('div')
+    rowControls.classList.add('row-controls')
+
+    const removeBtn = document.createElement('button')
+    removeBtn.appendChild(document.createTextNode('-'))
+    removeBtn.addEventListener('click', () => {
+      removeFilter(filter)
+    })
+    rowControls.appendChild(removeBtn)
+
+    row.appendChild(rowControls)
+
     filterList.appendChild(row)
   }
 }
@@ -99,6 +111,13 @@ function addFilter(type) {
   filter.optionValues = Object.assign({}, filter.options)
   filter.id = Math.random()
   filters.push(filter)
+
+  buildFilterList()
+  applyFilters()
+}
+
+function removeFilter(filter) {
+  filters.splice(filters.indexOf(filter), 1)
 
   buildFilterList()
   applyFilters()
