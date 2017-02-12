@@ -446,7 +446,7 @@ window.subnetLocations = [
   },
   {
     coord: 'jsk', encryptedCoord: 'ja_32rpq',
-    intelligenceLayer: 11, leadsTo: ['438'],
+    intelligenceLayer: 9, leadsTo: ['438'],
     version: '4.5'
   },
   {
