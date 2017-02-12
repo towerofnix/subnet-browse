@@ -1,0 +1,39 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #111;
+}
+
+.location-tile {
+  display: inline-block;
+  margin: 20px;
+  width: 150px;
+}
+
+.location-tile img {
+  width: 100%;
+}
+
+
+
+.control-row {
+  background-image: linear-gradient(#2E2E2E, #222);
+  padding: 2px;
+  color: #EEE;
+}
+
+.control-row.header {
+  background-image: linear-gradient(#333, #222);
+}
+
+.control-row button {
+  background-color: #444;
+  border: 1px solid #222222;
+  border-radius: 4px;
+  color: #EEE;
+}

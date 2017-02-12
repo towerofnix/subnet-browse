@@ -1,0 +1,153 @@
+const filters = []
+
+const filterTypes = [
+  {
+    name: 'Property Value',
+    options: {
+      property: 'version',
+      condition: 'equal',
+      value: '1.0'
+    },
+
+    apply: (input, opts) => input.filter(x => {
+      if (opts.condition === 'equal') {
+        return (x[opts.property] == opts.value)
+      } else if (opts.condition === 'starts-with') {
+        return x[opts.property].startsWith(opts.value)
+      } else if (opts.condition === 'ends-with') {
+        return x[opts.property].endsWith(opts.value)
+      }
+    }),
+
+    buildParts: [
+      {type: 'dropdown', option: 'property', choices: [
+        ['coord', 'Coordinate'],
+        ['encryptedCoord', 'Encrypted Coordinate'],
+        ['version', 'Version']
+      ]},
+      {type: 'dropdown', option: 'condition', choices: [
+        ['equal', 'is equal to'],
+        ['starts-with', 'starts with'],
+        ['ends-with', 'ends with']
+      ]},
+      {type: 'input', option: 'value'}
+    ]
+  }
+]
+
+function clearChildren(el) {
+  while (el.firstChild) {
+    el.firstChild.remove()
+  }
+}
+
+function buildFilterList() {
+  const filterList = document.getElementById('filter-list')
+
+  clearChildren(filterList)
+
+  for (let filter of filters) {
+    const row = document.createElement('div')
+    row.classList.add('control-row')
+
+    for (let part of filter.buildParts) {
+      if (typeof part === 'object') {
+
+        if (part.type === 'dropdown') {
+          const select = document.createElement('select')
+          for (let optionLabel of part.choices) {
+            const option = document.createElement('option')
+            if (Array.isArray(optionLabel)) {
+              option.value = optionLabel[0]
+              option.appendChild(document.createTextNode(optionLabel[1]))
+            } else {
+              option.appendChild(document.createTextNode(optionLabel))
+            }
+            select.appendChild(option)
+          }
+          Object.defineProperty(filter.optionValues, part.option, {
+            get: () => select.value
+          })
+          select.addEventListener('change', () => applyFilters())
+          row.appendChild(select)
+        }
+
+        else if (part.type === 'input') {
+          const input = document.createElement('input')
+          input.value = filter.optionValues[part.option]
+          Object.defineProperty(filter.optionValues, part.option, {
+            get: () => input.value
+          })
+          input.addEventListener('input', () => applyFilters())
+          row.appendChild(input)
+        }
+
+        row.appendChild(document.createTextNode(' '))
+
+      } else if (typeof part === 'string') {
+        const node = document.createTextNode(part + ' ')
+        row.appendChild(node)
+      }
+    }
+
+    filterList.appendChild(row)
+  }
+}
+
+function addFilter(type) {
+  const filter = Object.create(type)
+  filter.optionValues = Object.assign({}, filter.options)
+  filter.id = Math.random()
+  filters.push(filter)
+
+  buildFilterList()
+  applyFilters()
+}
+
+function applyFilters() {
+  let array = window.subnetLocations
+
+  for (let filter of filters) {
+    array = filter.apply(array, filter.optionValues)
+  }
+
+  buildLocationTiles(array)
+}
+
+function setupFilterBar() {
+  const addFilterBtn = document.getElementById('add-filter-button')
+  const applyFiltersBtn = document.getElementById('apply-filters-button')
+
+  addFilterBtn.addEventListener('click', evt => {
+    addFilter(filterTypes[0])
+  })
+
+  applyFiltersBtn.addEventListener('click', evt => {
+    applyFilters()
+  })
+}
+
+function getTileImagePath(location) {
+  return `img/tiles/${location.coord}.png`
+}
+
+function buildLocationTiles(locations) {
+  const locationList = document.getElementById('location-list')
+
+  clearChildren(locationList)
+
+  for (let location of locations) {
+    const tile = document.createElement('div')
+    tile.dataset.coordinate = location.coord
+    tile.classList.add('location-tile')
+
+    const img = document.createElement('img')
+    img.src = getTileImagePath(location)
+    tile.appendChild(img)
+
+    locationList.appendChild(tile)
+  }
+}
+
+setupFilterBar()
+buildLocationTiles(window.subnetLocations)
