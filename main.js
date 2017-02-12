@@ -10,17 +10,19 @@ const filterTypes = [
     },
 
     apply: (input, opts) => input.filter(x => {
+      const propVal = x[opts.property]
+
       switch(opts.condition) {
         case 'equal':
-          return x[opts.property] == opts.value
+          return propVal == opts.value
         case 'starts-with':
-          return x[opts.property].startsWith(opts.value)
+          return propVal.toString().startsWith(opts.value)
         case 'ends-with':
-          return x[opts.property].endsWith(opts.value)
+          return propVal.toString().endsWith(opts.value)
         case 'greater':
-          return x[opts.property] > opts.value
+          return parseFloat(propVal) > parseFloat(opts.value)
         case 'less':
-          return x[opts.property] < opts.value
+          return parseFloat(propVal) < parseFloat(opts.value)
       }
     }),
 
