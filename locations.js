@@ -385,6 +385,11 @@ window.subnetLocations = [
     version: '1.0'
   },
   {
+    coord: 'ael', encryptedCoord: 'nl_5vqaz',
+    intelligenceLayer: 7,
+    version: '4.5.1'
+  },
+  {
     coord: 'awy', encryptedCoord: 'te_uy50t',
     intelligenceLayer: 5,
     version: '3.2'
@@ -495,6 +500,11 @@ window.subnetLocations = [
     version: '2.4'
   },
   {
+    coord: 'pbu', encryptedCoord: 'ed_6k30a',
+    intelligenceLayer: 5,
+    version: '4.5.1'
+  },
+  {
     coord: 'ptl', encryptedCoord: 'nl_tl45a',
     intelligenceLayer: 10,
     version: '3.0'
@@ -513,6 +523,11 @@ window.subnetLocations = [
     coord: 'sza', encryptedCoord: 'tv_oyt21',
     intelligenceLayer: 4,
     version: '4.0'
+  },
+  {
+    coord: 'thb', encryptedCoord: 'nl_b0r0u',
+    intelligenceLayer: 6,
+    version: '4.5.1'
   },
   {
     coord: 'v12', encryptedCoord: 'nl_de32a',
