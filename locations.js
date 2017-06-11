@@ -1,12 +1,12 @@
 window.subnetLocations = [
   {
     coord: '000', encryptedCoord: '00_00000',
-    intelligenceLayer: 0, leadsTo: ['051', '076', '541', '551', '628', '642'],
+    intelligenceLayer: 0,
     version: '1.0'
   },
   {
     coord: '001', encryptedCoord: 'la_210d3',
-    intelligenceLayer: 7, leadsTo: ['613', 'chr', 'jul'],
+    intelligenceLayer: 7,
     version: '1.0'
   },
   {
@@ -21,27 +21,27 @@ window.subnetLocations = [
   },
   {
     coord: '006', encryptedCoord: 'lo_q3m87',
-    intelligenceLayer: 3, leadsTo: ['404'],
+    intelligenceLayer: 3,
     version: '1.0'
   },
   {
     coord: '011', encryptedCoord: 'en_23912',
-    intelligenceLayer: 3, leadsTo: ['128', '317'],
+    intelligenceLayer: 3,
     version: '2.3'
   },
   {
     coord: '043', encryptedCoord: 'ar_94801',
-    intelligenceLayer: 5, leadsTo: ['ixt'],
+    intelligenceLayer: 5,
     version: '1.0'
   },
   {
     coord: '051', encryptedCoord: 'nl_2rop0',
-    intelligenceLayer: 1, leadsTo: ['523', '917', 'mlp'],
+    intelligenceLayer: 1,
     version: '2.3'
   },
   {
     coord: '076', encryptedCoord: 'nl_2601s',
-    intelligenceLayer: 1, leadsTo: ['304', '875'],
+    intelligenceLayer: 1,
     version: '1.0'
   },
   {
@@ -51,17 +51,17 @@ window.subnetLocations = [
   },
   {
     coord: '103', encryptedCoord: 'ar_pzs26',
-    intelligenceLayer: 4, leadsTo: ['kol'],
+    intelligenceLayer: 4,
     version: '1.0'
   },
   {
     coord: '104', encryptedCoord: 'ar_093ds',
-    intelligenceLayer: 3, leadsTo: ['002', '800', 'chm', 'ott'],
+    intelligenceLayer: 3,
     version: '1.0'
   },
   {
     coord: '128', encryptedCoord: 'ed_f0lqw',
-    intelligenceLayer: 4, leadsTo: ['987', 'sbl'],
+    intelligenceLayer: 4,
     version: '2.3'
   },
   {
@@ -76,17 +76,17 @@ window.subnetLocations = [
   },
   {
     coord: '192', encryptedCoord: 'lo_3715y',
-    intelligenceLayer: 9, leadsTo: ['ptl'],
+    intelligenceLayer: 9,
     version: '3.0'
   },
   {
     coord: '218', encryptedCoord: 'ro_ru721',
-    intelligenceLayer: 2, leadsTo: ['006'],
+    intelligenceLayer: 2,
     version: '1.0'
   },
   {
     coord: '232', encryptedCoord: 'nl_pzq28',
-    intelligenceLayer: 3, leadsTo: ['550', '731', 'zwo'],
+    intelligenceLayer: 3,
     version: '1.0'
   },
   {
@@ -101,7 +101,7 @@ window.subnetLocations = [
   },
   {
     coord: '258', encryptedCoord: 'ar_za7he',
-    intelligenceLayer: 4, leadsTo: ['947', 'v12'],
+    intelligenceLayer: 4,
     version: '1.0'
   },
   {
@@ -131,7 +131,7 @@ window.subnetLocations = [
   },
   {
     coord: '317', encryptedCoord: 'tv_19sd7',
-    intelligenceLayer: 4, leadsTo: ['461', '806'],
+    intelligenceLayer: 4,
     version: '1.0'
   },
   {
@@ -141,47 +141,47 @@ window.subnetLocations = [
   },
   {
     coord: '378', encryptedCoord: 'tv_98701',
-    intelligenceLayer: 7, leadsTo: ['hpl'],
+    intelligenceLayer: 7,
     version: '1.0'
   },
   {
     coord: '399', encryptedCoord: 'tv_0122h',
-    intelligenceLayer: 2, leadsTo: ['712'],
+    intelligenceLayer: 2,
     version: '1.0'
   },
   {
     coord: '411', encryptedCoord: 'nl_x23xh',
-    intelligenceLayer: 4, leadsTo: ['553', 'btn'],
+    intelligenceLayer: 4,
     version: '1.0'
   },
   {
     coord: '404', encryptedCoord: 'tv_0134x',
-    intelligenceLayer: 4, leadsTo: ['010', 'rcr'],
+    intelligenceLayer: 4,
     version: '1.0'
   },
   {
     coord: '438', encryptedCoord: 'ja_j475k',
-    intelligenceLayer: 8, leadsTo: ['jat'],
+    intelligenceLayer: 8,
     version: '4.5'
   },
   {
     coord: '442', encryptedCoord: 'nl_yh432',
-    intelligenceLayer: 3, leadsTo: ['103', 'wrt'],
+    intelligenceLayer: 3,
     version: '1.0'
   },
   {
     coord: '452', encryptedCoord: 'ar_u1v0a',
-    intelligenceLayer: 3, leadsTo: ['770'],
+    intelligenceLayer: 3,
     version: '1.0'
   },
   {
     coord: '461', encryptedCoord: 'li_3s5e1',
-    intelligenceLayer: 5, leadsTo: ['brk'],
+    intelligenceLayer: 5,
     version: '1.0'
   },
   {
     coord: '462', encryptedCoord: 'ro_h2h3h',
-    intelligenceLayer: 2, leadsTo: ['104', 'fma'],
+    intelligenceLayer: 2,
     version: '2.2'
   },
   {
@@ -191,7 +191,7 @@ window.subnetLocations = [
   },
   {
     coord: '523', encryptedCoord: 'tv_tkq75',
-    intelligenceLayer: 2, leadsTo: ['277', 'npg'],
+    intelligenceLayer: 2,
     version: '2.3'
   },
   {
@@ -201,27 +201,27 @@ window.subnetLocations = [
   },
   {
     coord: '541', encryptedCoord: 'ro_6nkq9',
-    intelligenceLayer: 1, leadsTo: ['218', '757'],
+    intelligenceLayer: 1,
     version: '1.0'
   },
   {
     coord: '550', encryptedCoord: 'ld_01w87',
-    intelligenceLayer: 4, leadsTo: ['672'],
+    intelligenceLayer: 4,
     version: '1.0'
   },
   {
     coord: '551', encryptedCoord: 'la_ru1n5',
-    intelligenceLayer: 1, leadsTo: ['462', '747'],
+    intelligenceLayer: 1,
     version: '2.1'
   },
   {
     coord: '552', encryptedCoord: 'la_kop75',
-    intelligenceLayer: 4, leadsTo: ['kar'],
+    intelligenceLayer: 4,
     version: '2.1'
   },
   {
     coord: '553', encryptedCoord: 'ro_ju421',
-    intelligenceLayer: 5, leadsTo: ['992'],
+    intelligenceLayer: 5,
     version: '1.0'
   },
   {
@@ -231,12 +231,12 @@ window.subnetLocations = [
   },
   {
     coord: '580', encryptedCoord: 'nl_0f43a',
-    intelligenceLayer: 3, leadsTo: ['411'],
+    intelligenceLayer: 3,
     version: '1.0'
   },
   {
     coord: '596', encryptedCoord: 'la_ex1to',
-    intelligenceLayer: 6, leadsTo: ['001'],
+    intelligenceLayer: 6,
     version: '2.2'
   },
   {
@@ -246,28 +246,28 @@ window.subnetLocations = [
   },
   {
     coord: '613', encryptedCoord: 'nl_upos2',
-    intelligenceLayer: 8, leadsTo: ['157'],
+    intelligenceLayer: 8,
     version: '2.3'
   },
   {
     coord: '614', encryptedCoord: 'nl_upos3',
-    intelligenceLayer: 6, leadsTo: ['glx'],
+    intelligenceLayer: 6,
     version: '1.0'
   },
   {
     coord: '628', encryptedCoord: 'nl_o9086',
-    intelligenceLayer: 1, leadsTo: ['629', '245', '399'],
+    intelligenceLayer: 1,
     version: '1.0'
   },
   {
     // 629 was split from 628 in version 4.5.1.
     coord: '629', encryptedCoord: 'nl_o9087',
-    intelligenceLayer: 1, leadsTo: ['628'],
+    intelligenceLayer: 1,
     version: '4.5.1'
   },
   {
     coord: '642', encryptedCoord: 'en_p3per',
-    intelligenceLayer: 1, leadsTo: ['100'],
+    intelligenceLayer: 1,
     version: '1.0'
   },
   {
@@ -277,7 +277,7 @@ window.subnetLocations = [
   },
   {
     coord: '672', encryptedCoord: 'ba_76k20',
-    intelligenceLayer: 5, leadsTo: ['555'],
+    intelligenceLayer: 5,
     version: '1.0'
   },
   {
@@ -287,32 +287,32 @@ window.subnetLocations = [
   },
   {
     coord: '712', encryptedCoord: 'nl_or3ad',
-    intelligenceLayer: 3, leadsTo: ['258'],
+    intelligenceLayer: 3,
     version: '1.0'
   },
   {
     coord: '728', encryptedCoord: 'la_bonus',
-    intelligenceLayer: 3, leadsTo: ['552', 'sza'],
+    intelligenceLayer: 3,
     version: '2.2'
   },
   {
     coord: '731', encryptedCoord: 'nl_87963',
-    intelligenceLayer: 4, leadsTo: ['awy', 'lcr'],
+    intelligenceLayer: 4,
     version: '3.2'
   },
   {
     coord: '747', encryptedCoord: 'ro_tyvmf',
-    intelligenceLayer: 2, leadsTo: ['452', '728'],
+    intelligenceLayer: 2,
     version: '1.0'
   },
   {
     coord: '757', encryptedCoord: 'ed_345qe',
-    intelligenceLayer: 2, leadsTo: ['185'],
+    intelligenceLayer: 2,
     version: '1.0'
   },
   {
     coord: '770', encryptedCoord: 'ar_1chfw',
-    intelligenceLayer: 4, leadsTo: ['043'],
+    intelligenceLayer: 4,
     version: '1.0'
   },
   {
@@ -327,7 +327,7 @@ window.subnetLocations = [
   },
   {
     coord: '806', encryptedCoord: 'ed_ge10w',
-    intelligenceLayer: 5, leadsTo: ['cat'],
+    intelligenceLayer: 5,
     version: '1.0'
   },
   {
@@ -347,7 +347,7 @@ window.subnetLocations = [
   },
   {
     coord: '875', encryptedCoord: 'nl_g8dw9',
-    intelligenceLayer: 2, leadsTo: ['232', '580'],
+    intelligenceLayer: 2,
     version: '1.0'
   },
   {
@@ -357,12 +357,12 @@ window.subnetLocations = [
   },
   {
     coord: '902', encryptedCoord: 'ed_g82ns',
-    intelligenceLayer: 4, leadsTo: ['241'],
+    intelligenceLayer: 4,
     version: '1.0'
   },
   {
     coord: '917', encryptedCoord: 'lo_okrag',
-    intelligenceLayer: 2, leadsTo: ['011'],
+    intelligenceLayer: 2,
     version: '2.3'
   },
   {
@@ -372,12 +372,12 @@ window.subnetLocations = [
   },
   {
     coord: '947', encryptedCoord: 'ba_978rk',
-    intelligenceLayer: 5, leadsTo: ['777', '923'],
+    intelligenceLayer: 5,
     version: '1.0'
   },
   {
     coord: '966', encryptedCoord: 'nl_68186',
-    intelligenceLayer: 6, leadsTo: ['wiq'],
+    intelligenceLayer: 6,
     version: '1.0'
   },
   {
@@ -407,7 +407,7 @@ window.subnetLocations = [
   },
   {
     coord: 'btn', encryptedCoord: 'nl_5021b',
-    intelligenceLayer: 5, leadsTo: ['888'],
+    intelligenceLayer: 5,
     version: '2.4'
   },
   {
@@ -417,7 +417,7 @@ window.subnetLocations = [
   },
   {
     coord: 'chr', encryptedCoord: 'nl_5710d',
-    intelligenceLayer: 8, leadsTo: ['316'],
+    intelligenceLayer: 8,
     version: '2.4'
   },
   {
@@ -437,7 +437,7 @@ window.subnetLocations = [
   },
   {
     coord: 'hpl', encryptedCoord: 'nl_7620g',
-    intelligenceLayer: 8, leadsTo: ['oxt'],
+    intelligenceLayer: 8,
     version: '2.4'
   },
   {
@@ -447,22 +447,22 @@ window.subnetLocations = [
   },
   {
     coord: 'jat', encryptedCoord: 'ja_8fo13',
-    intelligenceLayer: 9, leadsTo: ['jko'],
+    intelligenceLayer: 9,
     version: '4.5'
   },
   {
     coord: 'jko', encryptedCoord: 'ja_s7201',
-    intelligenceLayer: 10, leadsTo: ['jsk'],
+    intelligenceLayer: 10,
     version: '4.5'
   },
   {
     coord: 'jsk', encryptedCoord: 'ja_32rpq',
-    intelligenceLayer: 9, leadsTo: ['438'],
+    intelligenceLayer: 9,
     version: '4.5'
   },
   {
     coord: 'jul', encryptedCoord: 'nl_dualc',
-    intelligenceLayer: 8, leadsTo: ['192'],
+    intelligenceLayer: 8,
     version: '3.0'
   },
   {
@@ -472,7 +472,7 @@ window.subnetLocations = [
   },
   {
     coord: 'kol', encryptedCoord: 'nl_32198',
-    intelligenceLayer: 5, leadsTo: ['614'],
+    intelligenceLayer: 5,
     version: '2.4.1'
   },
   {
