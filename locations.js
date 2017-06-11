@@ -256,8 +256,14 @@ window.subnetLocations = [
   },
   {
     coord: '628', encryptedCoord: 'nl_o9086',
-    intelligenceLayer: 1, leadsTo: ['245', '399'],
+    intelligenceLayer: 1, leadsTo: ['629', '245', '399'],
     version: '1.0'
+  },
+  {
+    // 629 was split from 628 in version 4.5.1.
+    coord: '629', encryptedCoord: 'nl_o9087',
+    intelligenceLayer: 1, leadsTo: ['628'],
+    version: '4.5.1'
   },
   {
     coord: '642', encryptedCoord: 'en_p3per',
