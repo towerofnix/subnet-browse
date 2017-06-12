@@ -260,12 +260,6 @@ window.subnetLocations = [
     version: '1.0'
   },
   {
-    // 629 was split from 628 in version 4.5.1.
-    coord: '629', encryptedCoord: 'nl_o9087',
-    intelligenceLayer: 1,
-    version: '4.5.1'
-  },
-  {
     coord: '642', encryptedCoord: 'en_p3per',
     intelligenceLayer: 1,
     version: '1.0'
@@ -434,6 +428,11 @@ window.subnetLocations = [
     coord: 'glx', encryptedCoord: 'tv_gqw32',
     intelligenceLayer: 7,
     version: '3.0'
+  },
+  {
+    coord: 'gzb', encryptedCoord: 'nl_o9087',
+    intelligenceLayer: 2,
+    version: '4.5.1'
   },
   {
     coord: 'hpl', encryptedCoord: 'nl_7620g',
