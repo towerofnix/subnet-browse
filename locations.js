@@ -335,6 +335,11 @@ window.subnetLocations = [
     version: '1.0'
   },
   {
+    coord: '840', encryptedCoord: 'nl_px013',
+    intelligenceLayer: 6,
+    version: '4.5.2'
+  },
+  {
     coord: '859', encryptedCoord: 'nl_arche',
     intelligenceLayer: 9,
     version: '1.0'
@@ -368,6 +373,11 @@ window.subnetLocations = [
     coord: '947', encryptedCoord: 'ba_978rk',
     intelligenceLayer: 5,
     version: '1.0'
+  },
+  {
+    coord: '950', encryptedCoord: 'nl_sx66q',
+    intelligenceLayer: 7,
+    version: '4.5.2'
   },
   {
     coord: '966', encryptedCoord: 'nl_68186',
