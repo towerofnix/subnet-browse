@@ -177,7 +177,7 @@ function focusLocation(location) {
   const setCellText = (id, text) => {
     const el = document.getElementById('details-' + id)
     clearChildren(el)
-    el.appendChild(document.createTextNode(text))
+    el.appendChild(document.createTextNode(text || '(unset)'))
   }
 
   document.getElementById('details-image').src = getTileImagePath(location)
