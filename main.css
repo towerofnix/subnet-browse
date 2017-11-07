@@ -53,6 +53,7 @@ body {
 
 #location-list {
   overflow-y: scroll;
+  flex-grow: 1;
 }
 
 #main-content {
