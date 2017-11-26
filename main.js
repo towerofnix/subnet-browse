@@ -10,6 +10,10 @@ const filterTypes = [
     },
 
     apply: (input, opts) => input.filter(x => {
+      if (!(opts.property in x)) {
+        return false
+      }
+
       const propVal = x[opts.property]
 
       switch(opts.condition) {
