@@ -119,9 +119,9 @@ function buildFilterList() {
   }
 }
 
-function addFilter(type) {
+function addFilter(type, optionValues = {}) {
   const filter = Object.create(type)
-  filter.optionValues = Object.assign({}, filter.options)
+  filter.optionValues = Object.assign({}, filter.options, optionValues)
   filter.id = Math.random()
   filters.push(filter)
 
@@ -224,5 +224,18 @@ function setupFilterBar() {
   })
 }
 
+function setupCellsForQuickFilter() {
+  const prefix = 'details-'
+  for (const cell of document.querySelectorAll(`a[id^=${prefix}]`)) {
+    cell.addEventListener('click', () => {
+      const property = cell.id.slice(prefix.length)
+      const value = cell.innerText
+
+      addFilter(filterTypes[0], {property, value})
+    })
+  }
+}
+
 setupFilterBar()
+setupCellsForQuickFilter()
 buildLocationTiles(window.subnetLocations)
