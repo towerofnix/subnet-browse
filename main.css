@@ -10,6 +10,11 @@ body {
   color: #CCC;
 }
 
+a {
+  color: #FFF;
+  text-decoration: underline;
+}
+
 .location-tile {
   display: inline-block;
   margin: 20px;
