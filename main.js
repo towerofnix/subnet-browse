@@ -30,7 +30,7 @@ const filterTypes = [
       {type: 'dropdown', option: 'property', choices: [
         ['coord', 'Coordinate'],
         ['encryptedCoord', 'Encrypted Coordinate'],
-        ['intelligenceLayer', 'Intelligence Level'],
+        ['intelligenceLevel', 'Intelligence Level'],
         ['version', 'Version']
       ]},
       {type: 'dropdown', option: 'condition', choices: [
@@ -174,10 +174,14 @@ function buildLocationTiles(locations) {
 }
 
 function focusLocation(location) {
-  const setCellText = (id, text) => {
-    const el = document.getElementById('details-' + id)
-    clearChildren(el)
-    el.appendChild(document.createTextNode(text || '(unset)'))
+  const setCellTextForProperty = function(property) {
+    const cell = document.getElementById('details-' + property)
+    clearChildren(cell)
+    cell.appendChild(document.createTextNode(
+      property in location
+      ? location[property]
+      : '(unset)'
+    ))
   }
 
   document.getElementById('details-image').src = getTileImagePath(location)
@@ -192,10 +196,11 @@ function focusLocation(location) {
   wikiLink.href = getWikiLink(location)
   title.appendChild(wikiLink)
 
-  setCellText('coord', location.coord)
-  setCellText('encrypted-coord', location.encryptedCoord)
-  setCellText('intelligence-level', location.intelligenceLayer)
-  setCellText('version', location.version)
+  for (const property of [
+    'coord', 'encryptedCoord', 'intelligenceLevel', 'version'
+  ]) {
+    setCellTextForProperty(property)
+  }
 }
 
 function getWikiLink(location) {
