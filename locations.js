@@ -620,6 +620,11 @@ window.subnetLocations = [
     version: '4.0'
   },
   {
+    coord: 'tbk', encryptedCoord: 'nl_thrs1',
+    intelligenceLevel: 9,
+    version: '4.5.4'
+  },
+  {
     coord: 'thb', encryptedCoord: 'nl_b0r0u',
     intelligenceLevel: 6,
     version: '4.5.1'
