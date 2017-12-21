@@ -233,9 +233,17 @@ function setupCellsForQuickFilter() {
   for (const cell of document.querySelectorAll(`a[id^=${prefix}]`)) {
     cell.addEventListener('click', () => {
       const property = cell.id.slice(prefix.length)
-      const value = cell.innerText
+      let value = cell.innerText
+      let condition = 'equals'
 
-      addFilter(filterTypes[0], {property, value})
+      // Special-case encrypted coordinate: what we really want is to filter
+      // by the code at the start (e.g. "la_").
+      if (property === 'encryptedCoord') {
+        value = value.match(/^.*_/)
+        condition = 'starts-with'
+      }
+
+      addFilter(filterTypes[0], {property, condition, value})
     })
   }
 }
