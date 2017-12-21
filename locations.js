@@ -260,6 +260,11 @@ window.subnetLocations = [
     version: '1.0'
   },
   {
+    coord: '616', encryptedCoord: 'nl_h3ll2',
+    intelligenceLevel: 3,
+    version: '4.5.4'
+  },
+  {
     coord: '628', encryptedCoord: 'nl_o9086',
     intelligenceLevel: 1,
     version: '1.0'
@@ -271,7 +276,7 @@ window.subnetLocations = [
   },
   {
     coord: '666', encryptedCoord: 'nl_h3e1l',
-    intelligenceLevel: 0,
+    intelligenceLevel: 3,
     version: '1.0'
   },
   {
@@ -415,6 +420,11 @@ window.subnetLocations = [
     version: '3.2'
   },
   {
+    coord: 'brg', encryptedCoord: 'nl_ybrib',
+    intelligenceLevel: 6,
+    version: '4.5.4'
+  },
+  {
     coord: 'brk', encryptedCoord: 'nl_55fze',
     intelligenceLevel: 6,
     version: '3.2'
@@ -440,9 +450,34 @@ window.subnetLocations = [
     version: '2.6'
   },
   {
+    coord: 'def', encryptedCoord: 'nl_fence',
+    intelligenceLayer: 5,
+    version: '4.5.4'
+  },
+  {
+    coord: 'far', encryptedCoord: 'wt_5goqp',
+    intelligenceLevel: 3,
+    version: '4.5.4'
+  },
+  {
     coord: 'fma', encryptedCoord: 'tv_1323k',
     intelligenceLevel: 3,
     version: '2.5'
+  },
+  {
+    coord: 'fsr', encryptedCoord: 'wt_v2kaz',
+    intelligenceLevel: 5,
+    version: '4.5.4'
+  },
+  {
+    coord: 'fur', encryptedCoord: 'wt_p9e3d',
+    intelligenceLevel: 3,
+    version: '4.5.4'
+  },
+  {
+    coord: 'glo', encryptedCoord: 'nl_glshr',
+    intelligenceLayer: 4,
+    version: '4.5.4'
   },
   {
     coord: 'glx', encryptedCoord: 'tv_gqw32',
@@ -490,9 +525,19 @@ window.subnetLocations = [
     version: '3.0'
   },
   {
+    coord: 'jvp', encryptedCoord: 'nl_9po5d',
+    intelligenceLevel: 11,
+    version: '4.5.4'
+  },
+  {
     coord: 'kar', encryptedCoord: 'pl_49326',
     intelligenceLevel: 5,
     version: '3.4'
+  },
+  {
+    coord: 'kim', encryptedCoord: 'nl_042a1',
+    intelligenceLevel: 11,
+    version: '4.5.4'
   },
   {
     coord: 'kol', encryptedCoord: 'nl_32198',
@@ -523,6 +568,11 @@ window.subnetLocations = [
     coord: 'npg', encryptedCoord: 'nl_04f56',
     intelligenceLevel: 3,
     version: '4.0'
+  },
+  {
+    coord: 'obs', encryptedCoord: 'nl_th3nd',
+    intelligenceLevel: 8,
+    version: '4.5.4'
   },
   {
     coord: 'ott', encryptedCoord: 'nl_09d21',
@@ -558,6 +608,11 @@ window.subnetLocations = [
     coord: 'spn', encryptedCoord: 'nl_5jbzp',
     intelligenceLevel: 3,
     version: '4.5.3'
+  },
+  {
+    coord: 'swt', encryptedCoord: 'nl_srswt',
+    intelligenceLevel: 4,
+    version: '4.5.4'
   },
   {
     coord: 'sza', encryptedCoord: 'tv_oyt21',
